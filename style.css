@@ -1,0 +1,119 @@
+@font-face {
+  font-family: 'Roboto';
+  src: url('font/Roboto-Regular.ttf');
+}
+
+body{
+  font-family: 'Roboto', sans-serif;
+  background-color: rgb(230,230,230);
+  margin:0;
+
+}
+
+.tooltip {
+  position: absolute;
+  text-align: center;
+  padding: 5px;
+  padding-right: 8px;
+  padding-left: 8px;
+  font: 12px sans-serif;
+  background: lightsteelblue;
+  border: 0px;
+  border-radius: 8px;
+  pointer-events: none;
+  font-weight: bold;
+  max-width:200px;
+}
+
+#charts-display{
+  margin-left: 5px;
+  margin-top: 5px;
+}
+
+.chart-group{
+  background-color: white;
+  display: inline-block;
+  vertical-align:top;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  font-size: 13px;
+  margin:5px;
+}
+
+.chart{
+  background-color: white;
+}
+
+tspan{
+  font-size:12px;
+}
+
+.title{
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  font-size:16px;
+  padding:10px;
+  background-color: rgb(243, 243,243);
+  color: rgb(100,100,100);
+}
+
+
+#bar-chart-group .chart{
+  border: 0px;
+  margin:0px;
+}
+
+#banner{
+  height: 70px;
+  font-size: 22px;
+  overflow: hidden;
+}
+
+.child-banner{
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  box-sizing:border-box;
+}
+
+#logo-title{
+  height:100%;
+  float: left;
+  background-color: rgb(166,149,199);
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white;
+}
+
+
+
+#logo-title img{
+  max-width: 100%;
+  max-height: 100%;
+  margin-right:10px;
+}
+
+#description{
+  background-color: white;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  font-size: 16px;
+  color: rgb(100,100,100);
+}
+
+.grid .tick line {
+    stroke: rgba(0,0,0,0.15);
+}
+.grid path {
+      stroke-width: 0;
+}
+
+.chart svg{
+  display:block;
+}
+
+.shelf-name{
+  display:block;
+    width:50px;
+    word-wrap:break-word;
+}

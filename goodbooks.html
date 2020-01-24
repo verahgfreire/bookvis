@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>BookVis - Top books on Goodreads</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div id="parent">
+      <div id="banner">
+        <div id="logo-title" class="child-banner">
+          <img src="books-stack_1.svg"></img>
+          <span>BookVis</span>
+        </div>
+        <div id="description" class="child-banner">A Goodreads Visualization</div>
+      </div>
+      <div id="charts-display">
+        <div class="chart-group">
+          <div class="title">Book Clusters</div>
+          <div id="cluster-chart" class="chart" width="400" height="400">
+          </div>
+        </div>
+        <div class="chart-group">
+          <div class="title"><span>Overview</span><span id="cluster-name"></span></div>
+          <div id="bubble-chart" class="chart" width="600" height="400">
+          </div>
+        </div>
+        <div class="chart-group">
+          <div class="title">Labels and Filters</div>
+          <div id="filter-info" class="chart" width="300" height="400">
+          </div>
+        </div>  
+        <div class="chart-group">
+          <div class="title">Compare books</div>
+          <div id="star-plot" class="chart" width="400" height="400">
+          </div>
+        </div>   
+        <div class="chart-group">
+          <div class="title">Bookshelves</div>
+          <div id="shelves-chart" width="600" height="400">
+            <div id="shelves-chart-0" class="chart" width="600" height="100">
+            </div>
+            <div id="shelves-chart-1" class="chart" width="600" height="100">
+            </div>
+            <div id="shelves-chart-2" class="chart" width="600" height="100">
+            </div>
+            <div id="shelves-chart-3" class="chart" width="600" height="100">
+            </div>
+          </div>
+        </div>
+        <div class="chart-group">
+          <div class="title">Book Ratings</div>
+          <div id="grouped-bar-chart" class="chart" width="300" height="400"></div>
+        </div> 
+      </div>
+    </div>
+    <script src="d3.v4.min.js" charset="utf-8"></script>
+    <script src="./charts/Chart.js"></script>
+    <script src="./charts/BubbleChart.js"></script>
+    <script src="./charts/ClusterChart.js"></script>
+    <script src="./charts/GroupedBarChart.js"></script>
+    <script src="./charts/StarPlot.js"></script>
+    <script src="./charts/GroupedTreeMap.js"></script>
+    <script src="./charts/FilterInfo.js"></script>
+    <script src="goodbooks.js"></script>
+  </body>
+</html>
